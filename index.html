@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dopamine</title>
+    <title>Dopamine | Nanuka Zurabashvili</title>
     <style>
-        body { margin: 0; background: #000; color: #fff; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; text-align: center; }
-        h1 { font-weight: 200; letter-spacing: 4px; text-transform: uppercase; font-size: 1.1rem; color: #777; margin: 0; }
-        .title { font-size: 3.5rem; font-weight: 800; margin: 10px 0; background: linear-gradient(to bottom, #fff, #bc13fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .btn { display: block; padding: 15px; border: 1px solid #bc13fe; color: #bc13fe; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; margin-top: 40px; }
+        body { margin: 0; background: #000; color: #fff; font-family: -apple-system, sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 40px 20px; text-align: center; }
+        .header h1 { font-weight: 200; letter-spacing: 4px; text-transform: uppercase; font-size: 0.8rem; color: #666; margin: 0; }
+        .header .title { font-size: 2.8rem; font-weight: 800; background: linear-gradient(to bottom, #fff, #bc13fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 5px 0 40px 0; }
+        .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; width: 100%; max-width: 400px; margin-bottom: 50px; }
+        .gallery img { width: 100%; aspect-ratio: 3/4; object-fit: cover; border: 1px solid #222; border-radius: 5px; }
+        .btn { display: inline-block; padding: 16px 40px; border: 1px solid #bc13fe; color: #bc13fe; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; }
     </style>
 </head>
 <body>
-    <div>
+    <div class="header">
         <h1>nanuka zurabashvili</h1>
         <div class="title">DOPAMINE</div>
-        <p style="color:#888">existential prose.</p>
-        <a href="https://www.instagram.com/nanuka.zurabashvili/" class="btn">Get the Dose</a>
     </div>
+    <div class="gallery">
+        <img src="https://i.postimg.cc/t4mFmZf3/IMG-4303.png" alt="Dopamine 1">
+        <img src="https://i.postimg.cc/mD8zYmZ2/IMG-4301.png" alt="Dopamine 2">
+        <img src="https://i.postimg.cc/0jX0XfX0/IMG-4302.png" alt="Dopamine 3">
+        <img src="https://i.postimg.cc/0jX0XfX1/IMG-4300.png" alt="Dopamine 4">
+    </div>
+    <a href="https://www.instagram.com/nanuka.zurabashvili/" class="btn">Get the Dose</a>
 </body>
 </html>
-
