@@ -5,12 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dopamine | Nanuka (Nana) Zurabashvili</title>
     <style>
+        /* ზოგადი სტილი (შავი ფონი) */
         body { margin: 0; background: #000; color: #fff; font-family: -apple-system, sans-serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 30px 15px; text-align: center; }
+        
+        /* სათაურის სტილი */
         .header h1 { font-weight: 200; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; color: #666; margin: 0; }
         .header .title { font-size: 3rem; font-weight: 800; background: linear-gradient(to bottom, #fff, #bc13fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 5px 0 30px 0; }
-        .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; width: 100%; max-width: 420px; margin-bottom: 40px; }
-        .gallery img { width: 100%; aspect-ratio: 3/4; object-fit: cover; border: 1px solid #333; border-radius: 4px; transition: transform 0.2s ease, border-color 0.2s ease; }
+        
+        /* გალერეის სტილი (Grid) */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 სვეტი */
+            gap: 12px;
+            width: 100%;
+            max-width: 450px;
+            margin-bottom: 40px;
+        }
+        
+        /* ფოტოების სტილი */
+        .gallery img {
+            width: 100%;
+            aspect-ratio: 3/4; /* ვერტიკალური ფოტოებისთვის */
+            object-fit: cover;
+            border: 1px solid #333;
+            border-radius: 4px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        
+        /* ფოტოზე მიტანის ეფექტი */
         .gallery img:hover { transform: scale(1.03); border-color: #bc13fe; box-shadow: 0 0 15px rgba(188, 19, 254, 0.3); }
+
+        /* ღილაკის სტილი */
         .btn { display: inline-block; padding: 15px 35px; border: 1px solid #bc13fe; color: #bc13fe; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; border-radius: 2px; transition: 0.3s; }
         .btn:active { background: rgba(188, 19, 254, 0.1); }
     </style>
@@ -20,12 +45,14 @@
         <h1>Nanuka (Nana) Zurabashvili</h1>
         <div class="title">DOPAMINE</div>
     </div>
+
     <div class="gallery">
         <img src="https://i.ibb.co/LhbVv8D/cover.jpg" alt="Dopamine Cover">
-        <img src="https://i.ibb.co/q9WJ0B9/back.jpg" alt="Dopamine Back">
+        <img src="https://i.ibb.co/q9WJ0B9/back.jpg" alt="Dopamine Back Cover">
         <img src="https://i.ibb.co/PZf0ZfX/prologue.jpg" alt="Dopamine Prologue">
-        <img src="https://i.ibb.co/M9YhK6Y/quote.jpg" alt="Dopamine Quote">
+        <img src="https://i.ibb.co/M9YhK6Y/quote.jpg" alt="Dopamine Confession">
     </div>
+
     <a href="https://www.instagram.com/nanuka.zurabashvili/" class="btn">Get the Dose</a>
 </body>
 </html>
